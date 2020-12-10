@@ -3,6 +3,9 @@
 Hi thanks for checking out my project! this is a web-based application that I made. 
 If you would like to play with the program I have hosted it using firebase! Here is the [link](https://pathfinding-algorithm-display.web.app/)
 
+
+![Image of Empyty Grid](https://github.com/RyanCartularo/Pathfinding-Algorithm-Display/blob/main/images/Empty%20Grid%20Picture.PNG)
+
 ## Summary of The Project
 
 The main goal of the Pathfinding Algorithm Display was to make a program the could be a visual aid to help people understand how pathfinding algorithms work.
