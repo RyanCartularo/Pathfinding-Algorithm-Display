@@ -1,0 +1,119 @@
+.grid {
+  margin: 3px 0 0;
+}
+
+.button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#BTN1 {
+  background: linear-gradient(90deg, #00b4db, #0083b0);
+  border: none;
+  color: white;
+  padding: 45px 110px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+}
+
+#BTN1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 10px;
+  background: linear-gradient(90deg, #4674fc, #0e32ff);
+  transition: transform 250ms ease-in-out;
+
+  transform: scaleX(0);
+}
+
+#BTN1:hover:before,
+#BTN1:focus::before {
+  transform: scaleX(1);
+}
+
+#BTN2 {
+  background: linear-gradient(90deg, #cb356b, #bd3f32);
+  border: none;
+  color: white;
+  padding: 45px 110px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+}
+
+#BTN2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 10px;
+  background: linear-gradient(90deg, #ee0979, #ff6a00);
+  transition: transform 250ms ease-in-out;
+
+  transform: scaleX(0);
+}
+
+#BTN2:hover:before,
+#BTN2:focus::before {
+  transform: scaleX(1);
+}
+
+#BTNC {
+  background: linear-gradient(90deg, #535557, #2c3e50);
+  border: none;
+  color: white;
+  padding: 45px 60px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+}
+
+#BTNC::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 10px;
+  background: linear-gradient(90deg, #0f2027, #2c5364);
+  transition: transform 250ms ease-in-out;
+
+  transform: scaleX(0);
+}
+
+#BTNC:hover:before,
+#BTNC:focus::before {
+  transform: scaleX(1);
+}
+
+body {
+  background-color: rgb(65, 65, 65);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Poppnis", sans-serif;
+  margin: 0;
+}

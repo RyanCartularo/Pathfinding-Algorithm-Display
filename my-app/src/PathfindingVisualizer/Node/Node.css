@@ -1,0 +1,108 @@
+.node {
+  width: 25px;
+  height: 25px;
+  outline: 1px solid rgb(142, 199, 245);
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+}
+
+.node-finish {
+  background-color: rgb(0, 102, 255);
+}
+
+.node-start {
+  background-color: rgb(0, 224, 49);
+  cursor: move;
+}
+
+.node-visited {
+  animation-name: visitedAnimation;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes visitedAnimation {
+  0% {
+    transform: scale(0.3);
+    background-color: rgba(0, 0, 66, 0.75);
+    border-radius: 100%;
+  }
+
+  50% {
+    background-color: rgb(247, 110, 217);
+  }
+
+  75% {
+    transform: scale(1.2);
+    background-color: rgb(255, 47, 210);
+  }
+
+  100% {
+    transform: scale(1);
+    background-color: rgb(202, 2, 159);
+  }
+}
+
+.node-wall {
+  animation-name: wallAnimation;
+  animation-duration: 0.2s;
+  animation-timing-function: linear;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  background-color: rgb(43, 109, 138);
+}
+
+@keyframes wallAnimation {
+  0% {
+    transform: scale(0.4);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.node-shortest-path {
+  animation-name: shortestPath;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes shortestPath {
+  0% {
+    transform: scale(0.3);
+    background-color: rgb(248, 8, 0);
+  }
+
+  25% {
+    transform: scale(0.6);
+    background-color: rgb(248, 8, 0);
+  }
+
+  50% {
+    transform: scale(1.2);
+    background-color: rgb(248, 8, 0);
+  }
+
+  100% {
+    transform: scale(1);
+    background-color: rgb(248, 8, 0);
+  }
+}
