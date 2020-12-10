@@ -16,3 +16,7 @@ in future releases.
 
 One key feature of the program is the ability to add walls which the algorithms will see and be unable to go through. This feature makes it possible for users to create mazes
 for the algorithms to try and traverse.
+
+As you can see here the mazes can get quite complex and quite fun.
+
+![Image of Maze Grid](https://github.com/RyanCartularo/Pathfinding-Algorithm-Display/blob/main/images/Complext%20Maze%20Picture.PNG)
